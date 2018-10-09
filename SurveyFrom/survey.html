@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="grid">
+    <div class="container">
+      <header>
+        <h1>Music Taste Survey</h1>
+      </header>
+      <main>
+        <article>
+          <header>
+            <p id="description">Please let us know what type of music you enjoy so we can expand our service.</p>
+          </header>
+          <div id="form-container">
+            <form id="survey-form">
+              <fieldset class="personal-info">
+                <legend>How can we reach you?</legend>
+                <div class="text-input-group">
+                  <label id="name-label" for="name">* Name:</label>
+                  <input id="name" type="text" name="name" tabindex="1" placeholder="First & Last name" required />
+                </div>
+                <div class="text-input-group">
+                  <label id="email-label" for="email">* Email:</label>
+                  <input id="email" type="email" name="email" tabindex="2" placeholder="Email" required />
+                </div>
+                <div class="text-input-group">
+                  <label id="phone-label" for="phone">* Phone:</label>
+                  <input id="phone" type="tel" name="phone" tabindex="3" placeholder="Phone Number" required />
+                </div>
+                <div class="text-input-group">
+                  <label id="address-label" for="address">* Address:</label>
+                  <input id="address" type="text" name="address" tabindex="4" placeholder="Address" required />
+                </div>
+                <div class="text-input-group">
+                  <label id="number-label" for="number">Age:</label>
+                  <input id="number" type="number" min="1" max="100" name="number" tabindex="5" placeholder="Age" />
+                </div>
+              </fieldset>
+              <fieldset class="fieldset-grid contact-info">
+                <legend>Whats the best way to reach you</legend>
+                <div class="radio-container">
+                  <div class="radio-input-group">
+                    <input type="radio" id="contact-email" name="contact-method" value="email" />
+                    <label class="contact-method" id="contact-email-label" for="contact-method">Email</label>
+                  </div>
+                  <div class="radio-input-group">
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone"/>
+                    <label class="contact-method" id="contact-phone-label" for="contact-method">Phone</label>
+                  </div>
+                  <div class="radio-input-group-group">
+                    <input type="radio" id="contact-mail" name="contact-method" value="address"/>
+                    <label class="contact-method" id="contact-mail-label" for="contact-method">Mail</label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="fieldset-grid music-info">
+                <legend>Tell us about your music taste!</legend>
+                <div class="select-input-group">
+                  <label for="area" id="area-label">What type of area do you live in?</label>
+                  <select id="area" name="area">
+                    <option>Urban</option>
+                    <option>Suburban</option>
+                    <option>Rural</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="checkbox-container">
+                  <div class="checkbox-description">
+                    <p>What style of music do you like?</p>
+                  </div>
+                  <div class="checkbox-group-container">
+                    <div class="checkbox-input-group">
+                      <input type="checkbox" name="musicstyle" id="relaxing" value="relaxing" /><label class="style-label"
+                        id="relaxing-label" for="relaxing">Relaxing</label>
+                    </div>
+                    <div class="checkbox-input-group">
+                      <input type="checkbox" name="musicstyle" id="upbeat" value="upbeat" /><label class="style-label"
+                        id="upbeat-label" for="upbeat">Up-beat</label>
+                    </div>
+                    <div class="checkbox-input-group">
+                      <input type="checkbox" name="musicstyle" id="mellow" value="mellow" /><label class="style-label"
+                        id="mellow-label" for="mellow">Mellow</label>
+                    </div>
+                    <div class="checkbox-input-group">
+                      <input type="checkbox" name="musicstyle" id="heavy" value="heavy" /><label class="style-label" id="heavy-label"
+                        for="heavy">Heavy</label>
+                    </div>
+                    <div class="checkbox-input-group">
+                      <input type="checkbox" name="musicstyle" id="ambient" value="ambient" /><label class="style-label"
+                        id="ambient-label" for="ambient">Ambient</label>
+                    </div>
+                  </div>
+                </div>
+
+                <label id="more-info-label" for="more-info">Tell use more about the music you like</label>
+                <textarea id="more-info" name="more-info" maxlength="200" wrap="hard"></textarea>
+
+              </fieldset>
+              <button id="submit">Submit</button>
+            </form>
+          </div>
+        </article>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
